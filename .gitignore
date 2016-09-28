@@ -27,3 +27,6 @@
 *.exe
 *.out
 *.app
+/FindIntersection/Bruteforce/Bruteforce/obj/Debug
+/FindIntersection/Bruteforce/Bruteforce/bin/Debug
+*.suo
