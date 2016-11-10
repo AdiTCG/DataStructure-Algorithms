@@ -30,3 +30,6 @@
 /FindIntersection/Bruteforce/Bruteforce/obj/Debug
 /FindIntersection/Bruteforce/Bruteforce/bin/Debug
 *.suo
+/DynamicProgramming/Fibonacci/bin/Debug
+/FindIntersection/Bruteforce/FindIntersection_DS/obj/Debug
+/DynamicProgramming/Fibonacci/obj/Debug
