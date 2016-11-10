@@ -9,6 +9,7 @@ namespace Fibonacci
     class Program
     {
         /*
+        // O(2^n)
         //Fibonacci using recursion
         static int GetFibonacci(int n)
         {
@@ -18,9 +19,10 @@ namespace Fibonacci
             return GetFibonacci(n - 1) + GetFibonacci(n - 2);
         }*/
 
+        //O(n)
         //Memorize sub problem once it is executed.
         //Calculate each sub problem once
-        static int GetFibonacci(int n, int[] memory)
+        static long GetFibonacci(int n, long[] memory)
         {
             //base case
             if (n < 3) return 1;
@@ -38,8 +40,8 @@ namespace Fibonacci
             int n = Convert.ToInt32( Console.ReadLine());
 
             //call
-            int[] mem = new int[n + 1];
-            int r = GetFibonacci(n, mem);
+            long[] mem = new long[n + 1];
+            long r = GetFibonacci(n, mem);
             Console.WriteLine(r);
         }
     }
