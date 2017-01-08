@@ -8,24 +8,24 @@ namespace Fibonacci
 {
     class Program
     {
-        /*
         // O(2^n)
-        //Fibonacci using recursion
+        //Brute force
         static int GetFibonacci(int n)
         {
             //base case
             if (n < 3) return 1;
 
             return GetFibonacci(n - 1) + GetFibonacci(n - 2);
-        }*/
+        }
 
-        //O(n) 
-        //Memorize sub problem once it is executed.
-        //Calculate each sub problem once
+        //O(n)
+        //Fibonacci using recursion, Top-down approach
+        //Memorize sub problem once it is executed. Calculate each sub problem once
         static long GetFibonacci(int n, long[] memory)
         {
             //base case
             if (n < 3) return 1;
+
             if (memory[n] > 0)
                 return memory[n];
 
@@ -33,6 +33,8 @@ namespace Fibonacci
             return memory[n];
         }
 
+        //O(n)
+        //Bottom-up approach
         static long GetFibonacci(long[] memory, int n)
         {
             //base case
